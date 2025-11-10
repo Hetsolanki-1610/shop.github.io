@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shine Jewelers | Premium Collection</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-black font-sans">
+
+  <!-- 🔹 Navbar -->
+  <nav class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+      <h1 class="text-2xl font-bold tracking-wide">💎 Shine Jewelers</h1>
+      <ul class="hidden md:flex space-x-8 font-medium">
+        <li><a href="#home" class="hover:text-yellow-600">Home</a></li>
+        <li><a href="#products" class="hover:text-yellow-600">Products</a></li>
+        <li><a href="#about" class="hover:text-yellow-600">About</a></li>
+        <li><a href="#contact" class="hover:text-yellow-600">Contact</a></li>
+      </ul>
+      <button id="menuBtn" class="text-3xl md:hidden">☰</button>
+    </div>
+    <div id="mobileMenu" class="hidden bg-white border-t md:hidden">
+      <ul class="flex flex-col items-center py-4 space-y-2">
+        <li><a href="#home" class="hover:text-yellow-600">Home</a></li>
+        <li><a href="#products" class="hover:text-yellow-600">Products</a></li>
+        <li><a href="#about" class="hover:text-yellow-600">About</a></li>
+        <li><a href="#contact" class="hover:text-yellow-600">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 🔹 Hero Banner -->
+ <section id="home" class="relative bg-[url('https://cdn.shopify.com/s/files/1/1115/6326/files/B1007_Diamond_Pendants_1001_thumb_bc26da0f-4fda-42ef-bbaa-6c85f7c9951c.jpg?v=1602841064')] bg-cover bg-center h-screen flex items-center justify-center text-center">
+  <!-- Dark Overlay -->
+  <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+
+  <!-- Text Content -->
+  <div class="relative z-10 text-white px-6">
+    <h2 class="text-5xl md:text-6xl font-bold mb-6 drop-shadow-lg">Luxury Jewelry for Every Moment</h2>
+    <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto text-gray-200">
+      Discover handcrafted necklaces, earrings, and rings that define timeless elegance and sophistication.
+    </p>
+    <a href="#products" class="bg-yellow-500 text-black px-8 py-4 rounded-full font-semibold hover:bg-yellow-400 transition transform hover:scale-105 shadow-lg">
+      Shop Now
+    </a>
+  </div>
+</section>
+
+
+  <!-- 🔹 Trending Collection Banner -->
+  <section class="max-w-7xl mx-auto my-12 text-center px-4">
+    <h3 class="text-3xl font-semibold mb-4">✨ Trending Collection 2025 ✨</h3>
+    <p class="text-gray-600">Explore timeless pieces designed to make every occasion special.</p>
+  </section>
+
+  <!-- 🔹 Products Section -->
+  <section id="products" class="max-w-7xl mx-auto px-4 mb-16">
+    <h2 class="text-2xl font-bold mb-6 text-center">Our Latest Jewelry</h2>
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <!-- Product Card -->
+      <div class="border rounded-lg overflow-hidden shadow hover:shadow-lg transition">
+        <img src="https://m.media-amazon.com/images/I/81chpND3ziL._AC_UY1100_.jpg" class="w-full h-56 object-cover" alt="">
+        <div class="p-4 text-center">
+          <h4 class="font-semibold">Gold Necklace</h4>
+          <p class="text-yellow-600 font-bold mt-2">₹15,999</p>
+          <button class="bg-black text-white px-4 py-2 mt-3 rounded hover:bg-gray-800"  onclick="window.location.href='product.html'">Buy Now</button>
+        </div>
+      </div>
+
+      <div class="border rounded-lg overflow-hidden shadow hover:shadow-lg transition">
+        <img src="https://gridpx.com/wp-content/uploads/2024/11/65.jpg" class="w-full h-56 object-cover" alt="">
+        <div class="p-4 text-center">
+          <h4 class="font-semibold">Diamond Earrings</h4>
+          <p class="text-yellow-600 font-bold mt-2">₹9,499</p>
+          <button class="bg-black text-white px-4 py-2 mt-3 rounded hover:bg-gray-800">Buy Now</button>
+        </div>
+      </div>
+
+      <div class="border rounded-lg overflow-hidden shadow hover:shadow-lg transition">
+        <img src="https://zariyajewellery.in/cdn/shop/files/925_pure_sterling_silver_bracelet_for_men.jpg?v=1761330819&width=1946" class="w-full h-56 object-cover" alt="">
+        <div class="p-4 text-center">
+          <h4 class="font-semibold">Silver Bracelet</h4>
+          <p class="text-yellow-600 font-bold mt-2">₹5,299</p>
+          <button class="bg-black text-white px-4 py-2 mt-3 rounded hover:bg-gray-800">Buy Now</button>
+        </div>
+      </div>
+
+      <div class="border rounded-lg overflow-hidden shadow hover:shadow-lg transition">
+        <img src="https://diamondhousedh.com/wp-content/uploads/2023/01/87.jpg" class="w-full h-56 object-cover" alt="">
+        <div class="p-4 text-center">
+          <h4 class="font-semibold">Platinum Ring</h4>
+          <p class="text-yellow-600 font-bold mt-2">₹18,499</p>
+          <button class="bg-black text-white px-4 py-2 mt-3 rounded hover:bg-gray-800">Buy Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- 🔹 Second Banner Section -->
+<!-- 🔹 Second Banner Section (Fixed for Mobile) -->
+<!-- 🔹 Second Banner Section (Full Width, No Padding on Mobile) -->
+<section class="my-16">
+  <img 
+    src="https://sencowebfiles.s3.ap-south-1.amazonaws.com/contents/banner/ltKaVFLq86mzijq6FcS2nvu9mw17lZS51uy5VzLv.jpeg" 
+    alt="Jewelry Banner"
+    class="w-full h-auto md:h-[500px] object-cover object-center rounded-none md:rounded-2xl shadow-none md:shadow-xl  transition-transform duration-500"
+  >
+</section>
+
+
+
+
+  <!-- 🔹 Offer Banner -->
+  <section class="bg-yellow-50 py-12 text-center">
+    <h3 class="text-3xl font-semibold mb-3">🌟 Festive Offer: Flat 25% Off on All Gold Jewelry 🌟</h3>
+    <p class="text-gray-700 mb-4">Limited time offer! Upgrade your style with premium jewelry today.</p>
+    <a href="#products" class="bg-yellow-500 text-black px-6 py-3 rounded-full font-semibold hover:bg-yellow-400 transition">Explore Offers</a>
+  </section>
+
+  <!-- 🔹 About Section -->
+  <section id="about" class="max-w-6xl mx-auto px-4 py-16 text-center">
+    <h2 class="text-3xl font-bold mb-6">About Shine Jewelers</h2>
+    <p class="text-gray-600 leading-relaxed">
+      Shine Jewelers is a trusted name in luxury jewelry. We craft timeless designs with the finest materials.
+      Our mission is to add elegance to your moments with pieces that reflect beauty, trust, and sophistication.
+    </p>
+  </section>
+
+  <!-- 🔹 Contact Section -->
+  <section id="contact" class="bg-gray-100 py-16">
+    <div class="max-w-4xl mx-auto text-center px-4">
+      <h2 class="text-3xl font-bold mb-6">Contact Us</h2>
+      <form class="grid gap-4">
+        <input type="text" placeholder="Your Name" class="p-3 border rounded">
+        <input type="email" placeholder="Your Email" class="p-3 border rounded">
+        <textarea placeholder="Your Message" class="p-3 border rounded"></textarea>
+        <button type="submit" class="bg-black text-white px-6 py-3 rounded hover:bg-gray-800">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- 🔹 Footer -->
+  <footer class="bg-black text-white py-6 text-center">
+    <p>© 2025 Het Web Studio. All rights reserved.</p>
+  </footer>
+
+  <!-- 🔹 JavaScript for Mobile Menu -->
+  <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>
